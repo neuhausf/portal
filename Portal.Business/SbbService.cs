@@ -66,7 +66,7 @@
             request.ConReq.Dest.Station = to;
             request.ConReq.ReqT.a = a2._0;
             request.ConReq.ReqT.date = dateAndTime.ToString("yyyyMMdd", System.Globalization.CultureInfo.InvariantCulture);
-            request.ConReq.ReqT.time = dateAndTime.ToString("hh:mm", System.Globalization.CultureInfo.InvariantCulture);
+            request.ConReq.ReqT.time = dateAndTime.ToString("HH:mm", System.Globalization.CultureInfo.InvariantCulture);
             request.ConReq.RFlags.b = "0";
             request.ConReq.RFlags.f = "4";
             request.ConReq.RFlags.sMode = sMode.N;
@@ -99,6 +99,12 @@
 
             var serializer = new XmlSerializer(typeof(ResC));
             var resp = (T)serializer.Deserialize(content);
+            content.Position = 0;
+            using (StreamReader reader = new StreamReader(content, Encoding.UTF8))
+            {
+                Debug.WriteLine(reader.ReadToEnd());
+            }
+
             return resp;
         }
 

@@ -30,7 +30,7 @@ namespace Portal.Test
         [TestMethod]
         public void CanGetConnectionList()
         {
-            var result = Task.Run(async () => await this.sbbService.GetConnections("Münsingen", "Bern", DateTime.Now)).Result;
+            var result = Task.Run(async () => await this.sbbService.GetConnections("Bern", "Basel", DateTime.Now.AddHours(-1))).Result;
            // result.ConRes.ConnectionList;
 
             Assert.IsNotNull(result);
