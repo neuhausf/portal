@@ -49,48 +49,34 @@ Copyright (c) Microsoft Corporation. All rights reserved
             </Grid.ColumnDefinitions>
             <Image x:Name="Logoimage" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="ms-appx:///Assets/square70logo.png" IsHitTestVisible="False"/>
             <TextBlock x:Name="PageTitle" x:Uid="headingPage2" Text="" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
-            <ListView ItemsSource="{Binding Source={StaticResource Connections}}"
-                      ItemTemplate="{StaticResource ListViewItemTemplate}"
-                      GroupStyleSelector="{StaticResource ListGroupStyleSelector}"
-                      Margin="120" Width="320" Grid.Column="0"/>
-
-            <GridView  ItemsSource="{Binding Source={StaticResource DelayedConnections}}" 
-                 Margin="0,120,0,0" MaxHeight="500" Grid.Column="1">
-                <GridView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Margin="20" d:DataContext="{d:DesignInstance viewModel:DelayViewModel}">
-                            <TextBlock Text="{Binding Departure}" FontWeight="Bold" 
-                                   Style="{StaticResource BaseTextBlockStyle}"/>
-                            <TextBlock Text="{Binding Arrival}" TextWrapping="NoWrap" 
-                                   Style="{StaticResource BodyTextBlockStyle}" />
-                            <TextBlock Text="{Binding DelayInMinutes}" TextWrapping="NoWrap" 
-                                   Style="{StaticResource BodyTextBlockStyle}"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </GridView.ItemTemplate>
-                <GridView.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <ItemsWrapGrid MaximumRowsOrColumns="3"/>
-                    </ItemsPanelTemplate>
-                </GridView.ItemsPanel>
-
-                <GridView.GroupStyle>
-                    <GroupStyle HidesIfEmpty="True">
-                        <GroupStyle.HeaderTemplate>
-                            <DataTemplate>
-                                <Grid Background="LightGray" Margin="0">
-                                    <TextBlock Text='{Binding Name}' 
-                                           Foreground="Black" Margin="30"
-                                           Style="{StaticResource HeaderTextBlockStyle}"/>
-                                </Grid>
-                            </DataTemplate>
-                        </GroupStyle.HeaderTemplate>
-
-                    </GroupStyle>
-                </GridView.GroupStyle>
-            </GridView>
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,60"/>
         </Grid>
-        
+        <ListView 
+              VerticalAlignment="Top"
+              Margin="10,5,0,0"
+              ItemsSource="{Binding Source={StaticResource DelayedConnections}}"
+              ItemTemplate="{StaticResource TimeTableTemplate}"
+              BorderBrush="#19FFFFFF" BorderThickness="1,0,0,0" 
+              SelectionMode="None" IsItemClickEnabled="False"
+              ScrollViewer.VerticalScrollBarVisibility="Hidden"
+              ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+              ItemContainerStyle="{StaticResource SimpleListViewItemStyle}"
+              IsHitTestVisible="False" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
+              Grid.Row="1">
+
+            <ListView.GroupStyle>
+                <GroupStyle HidesIfEmpty="True">
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <Grid Background="Transparent" Margin="0">
+                                <TextBlock Text='{Binding GroupName}' 
+                                           Foreground="LightGray" Margin="5"
+                                           Style="{StaticResource SubheaderTextBlockStyle}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                </GroupStyle>
+            </ListView.GroupStyle>
+        </ListView>
     </Grid>
 </view:NavigationPage>
