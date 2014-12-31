@@ -24,6 +24,8 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Portal.View.Pages
 {
+    using Windows.UI;
+
     using Portal.Business.ViewModel;
     using Portal.View;
     using Portal.View.Common;
@@ -123,7 +125,7 @@ namespace Portal.View.Pages
                 FromStation = "Münsingen",
                 ToStation = "Bern",
             };
-            connection.Delays.Add(new DelayViewModel{Arrival = DateTime.Now.AddHours(1.5), DelayInMinutes = 5, Departure = DateTime.Now.AddHours(0.01) });
+            connection.Delays.Add(new DelayViewModel { Arrival = DateTime.Now.AddHours(1.5), DelayInMinutes = 5, Departure = DateTime.Now.AddHours(0.01) });
             delayedConnections.Add(connection);
 
             connection = new ConnectionViewModel

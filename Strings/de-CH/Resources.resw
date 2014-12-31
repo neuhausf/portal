@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="appbarHelp.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>Help</value>
+    <value>Hilfe</value>
     <comment>App bar help button.</comment>
   </data>
   <data name="appbarHelp.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Show help for this app</value>
+    <value>Zeige die Hilfe für diese App an.</value>
     <comment>App bar help button.</comment>
   </data>
   <data name="appbarHome.Content" xml:space="preserve">
@@ -133,34 +133,48 @@
     <comment>App bar home button.</comment>
   </data>
   <data name="appbarHome.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Go to the home page</value>
+    <value>Zurück zur Homepage</value>
     <comment>App bar home button.</comment>
   </data>
   <data name="appBarPage2.Content" xml:space="preserve">
-    <value>Page 2</value>
+    <value>Verspätungen</value>
   </data>
   <data name="appbarPage2.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>Page 2</value>
+    <value>SBB</value>
     <comment>App bar page 2 button.</comment>
   </data>
   <data name="appbarPage2.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Go to page 2</value>
+    <value>Gehe zu Seite 2</value>
     <comment>App bar page 2 button.</comment>
   </data>
   <data name="description" xml:space="preserve">
-    <value>Windows Store app flat navigation template (XAML).</value>
+    <value>Diese App zeigt die wichtigsten Informationen zur richtigen Zeit.</value>
     <comment>Don't change 'SDK'</comment>
   </data>
   <data name="disclaimer" xml:space="preserve">
-    <value>THIS CODE AND INFORMATION IS PROVIDED 'AS IS' WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.\n\nCopyright (c) Microsoft Corporation. All rights reserved</value>
+    <value>Billboard - what's going on?
+Copyright (C) 2014 Florian Neuhaus
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</value>
     <comment>Usage disclaimer.</comment>
   </data>
   <data name="disclaimerButton" xml:space="preserve">
-    <value>Accept</value>
+    <value>Annehmen</value>
     <comment>Usage disclaimer button.</comment>
   </data>
   <data name="disclaimerTitle" xml:space="preserve">
-    <value>Disclaimer</value>
+    <value>Licence</value>
     <comment>Usage disclaimer title.</comment>
   </data>
   <data name="displayName" xml:space="preserve">
@@ -168,15 +182,15 @@
     <comment>Don't change 'SDK'</comment>
   </data>
   <data name="nextPageButton.Content" xml:space="preserve">
-    <value>Next page</value>
+    <value>Nächste Seite</value>
     <comment>Next page button.</comment>
   </data>
   <data name="settingsHelpLabel" xml:space="preserve">
-    <value>Help</value>
+    <value>Hilfe</value>
     <comment>Don't change 'SDK'</comment>
   </data>
   <data name="settingsPermissionsLabel" xml:space="preserve">
-    <value>Permissions</value>
+    <value>Berechtigungen</value>
     <comment>Don't change 'SDK'</comment>
   </data>
   <data name="settingsPrivacyLabel" xml:space="preserve">
@@ -184,13 +198,13 @@
     <comment>Don't change 'SDK'</comment>
   </data>
   <data name="shortName" xml:space="preserve">
-    <value>FlatNav</value>
+    <value>Billboard</value>
     <comment>Must be less than 13 characters and should be an abbreviation for the displayName</comment>
   </data>
   <data name="headingPage1.Text" xml:space="preserve">
-    <value>My application</value>
+    <value>Billboard</value>
   </data>
   <data name="headingPage2.Text" xml:space="preserve">
-    <value>My Application Page 2</value>
+    <value>Verspätungen</value>
   </data>
 </root>

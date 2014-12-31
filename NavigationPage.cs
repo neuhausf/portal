@@ -22,13 +22,13 @@
 
             // Navigation controls go in the top app bar.
             AppBar navBar = new AppBar();
-            navBar.Background = new SolidColorBrush(new Color() { A = 255, R = 0, G = 178, B = 240 });
+            navBar.Background = new SolidColorBrush(new Color() { A = 255, R = 204, G = 0, B = 0 });
             navBar.Content = new NavigationControl();
             this.TopAppBar = navBar;
 
             // CommandBar for Help command goes in the BottomAppBar.
             CommandBar commandBar = new CommandBar();
-            commandBar.Background = new SolidColorBrush(new Color() { A = 255, R = 0, G = 178, B = 240 });
+            commandBar.Background = new SolidColorBrush(new Color() { A = 255, R = 204, G = 0, B = 0 });
             // Create the Help button.
             AppBarButton helpButton = new AppBarButton();
 

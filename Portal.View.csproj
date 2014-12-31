@@ -136,49 +136,12 @@
     <PRIResource Include="Strings\fr-FR\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\de-CH\badgelogo.scale-100.png" />
-    <Content Include="Assets\de-CH\badgelogo.scale-140.png" />
-    <Content Include="Assets\de-CH\badgelogo.scale-180.png" />
     <Content Include="Assets\de-CH\contrast-black\Logo.scale-100.png" />
-    <Content Include="Assets\de-CH\contrast-black\SmallLogo.scale-100.png" />
-    <Content Include="Assets\de-CH\contrast-black\SplashScreen.scale-100.png" />
-    <Content Include="Assets\de-CH\contrast-black\storelogo.scale-100.png" />
-    <Content Include="Assets\de-CH\contrast-black\widelogo.scale-100.png" />
-    <Content Include="Assets\de-CH\contrast-white\Logo.scale-100.png" />
-    <Content Include="Assets\de-CH\contrast-white\SmallLogo.scale-100.png" />
-    <Content Include="Assets\de-CH\contrast-white\SplashScreen.scale-100.png" />
-    <Content Include="Assets\de-CH\contrast-white\storelogo.scale-100.png" />
-    <Content Include="Assets\de-CH\contrast-white\widelogo.scale-100.png" />
     <Content Include="Assets\de-CH\logo.scale-100.png" />
     <Content Include="Assets\de-CH\logo.scale-140.png" />
     <Content Include="Assets\de-CH\logo.scale-180.png" />
     <Content Include="Assets\de-CH\logo.scale-80.png" />
-    <Content Include="Assets\de-CH\smalllogo.scale-100.png" />
-    <Content Include="Assets\de-CH\smalllogo.scale-140.png" />
-    <Content Include="Assets\de-CH\smalllogo.scale-180.png" />
-    <Content Include="Assets\de-CH\smalllogo.scale-80.png" />
-    <Content Include="Assets\de-CH\smalllogo.targetsize-16.png" />
-    <Content Include="Assets\de-CH\smalllogo.targetsize-256.png" />
-    <Content Include="Assets\de-CH\smalllogo.targetsize-32.png" />
-    <Content Include="Assets\de-CH\smalllogo.targetsize-48.png" />
     <Content Include="Assets\de-CH\splashscreen.scale-100.png" />
-    <Content Include="Assets\de-CH\splashscreen.scale-140.png" />
-    <Content Include="Assets\de-CH\splashscreen.scale-180.png" />
-    <Content Include="Assets\de-CH\square310logo.scale-100.png" />
-    <Content Include="Assets\de-CH\square310logo.scale-140.png" />
-    <Content Include="Assets\de-CH\square310logo.scale-180.png" />
-    <Content Include="Assets\de-CH\square310logo.scale-80.png" />
-    <Content Include="Assets\de-CH\square70logo.scale-100.png" />
-    <Content Include="Assets\de-CH\square70logo.scale-140.png" />
-    <Content Include="Assets\de-CH\square70logo.scale-180.png" />
-    <Content Include="Assets\de-CH\square70logo.scale-80.png" />
-    <Content Include="Assets\de-CH\storelogo.scale-100.png" />
-    <Content Include="Assets\de-CH\storelogo.scale-140.png" />
-    <Content Include="Assets\de-CH\storelogo.scale-180.png" />
-    <Content Include="Assets\de-CH\widelogo.scale-100.png" />
-    <Content Include="Assets\de-CH\widelogo.scale-140.png" />
-    <Content Include="Assets\de-CH\widelogo.scale-180.png" />
-    <Content Include="Assets\de-CH\WideLogo.scale-80.png" />
     <Content Include="Assets\fr-FR\badgelogo.scale-100.png" />
     <Content Include="Assets\fr-FR\badgelogo.scale-140.png" />
     <Content Include="Assets\fr-FR\badgelogo.scale-180.png" />
@@ -255,6 +218,9 @@
       <Project>{33915e39-0db8-4e22-a710-1667d50bd05a}</Project>
       <Name>Portal.Business</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\de-CH\contrast-white\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
